@@ -68,7 +68,6 @@ export const Footer = () => {
             <Link
               className={`${style.footerItem}`}
               underline="none"
-              href="https://www.natura.cl/buscar-consultor?redirect=%2Fexpresion-de-color"
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -101,7 +100,6 @@ export const Footer = () => {
                 alignItems: "center",
               }}
               underline="none"
-              href="https://api.whatsapp.com/send?phone=5511930380000"
             >
               <HelpOutlineOutlinedIcon
                 sx={{
@@ -129,7 +127,6 @@ export const Footer = () => {
                 alignItems: "center",
               }}
               underline="none"
-              href="https://www.natura.cl/la-natura/no-testeo-en-animales"
             >
               <PetsOutlinedIcon
                 sx={{
@@ -158,7 +155,6 @@ export const Footer = () => {
                 alignItems: "center",
               }}
               underline="none"
-              href="https://www.natura.cl/encuentra-natura"
             >
               <LocationOnOutlinedIcon
                 sx={{
@@ -187,7 +183,6 @@ export const Footer = () => {
                 alignItems: "center",
               }}
               underline="none"
-              href="https://api.whatsapp.com/send?phone=5511930380000"
             >
               <DonutLargeOutlinedIcon
                 sx={{
@@ -238,7 +233,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/la-natura"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -249,7 +243,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/sustentabilidad"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -260,7 +253,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/la-natura/trabaja-con-nosotros"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -278,7 +270,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/encuentra-natura"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -289,7 +280,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/ayuda"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -300,7 +290,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/quiero-ser-consultor"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -318,7 +307,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/terminos-y-condiciones"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -329,7 +317,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/politicas-de-privacidad"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -340,7 +327,6 @@ export const Footer = () => {
                             style={{ padding: ".25rem 0", lineHeight: "1.5em" }}
                           >
                             <Link
-                              href="https://www.natura.cl/etica-compliance"
                               underline="none"
                               sx={{ color: "#b4b4b4", cursor: "pointer" }}
                             >
@@ -374,7 +360,6 @@ export const Footer = () => {
                       <Box sx={{ display: "flex" }}>
                         <Link
                           sx={{ marginRight: "5px" }}
-                          href="https://play.google.com/store/apps/details?id=net.natura.semprepresente&referrer=utm_source%3Drede_natura_mobile%26utm_medium%3Dbotao_google_play&pli=1"
                         >
                           <Image
                             alt="google play"
@@ -383,7 +368,7 @@ export const Footer = () => {
                             width={97}
                           />
                         </Link>
-                        <Link href="https://itunes.apple.com/app/apple-store/id1061637276?pt=1379476&ct=rede_natura_mobile_botao_appstore&mt=8">
+                        <Link>
                           <Image
                             alt="google play"
                             src={appStore}

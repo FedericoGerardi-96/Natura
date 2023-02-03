@@ -2,18 +2,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Grid,
-  Typography,
-  Link,
-  Chip,
-  IconButton,
-} from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, Grid, Typography, Link, Chip, IconButton } from "@mui/material";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import StarIcon from "@mui/icons-material/Star";
@@ -40,23 +29,13 @@ const index = () => {
   return (
     <>
       <Box sx={{ width: "100%" }}>
-        <Image
-          alt=""
-          src={banner}
-          style={{ width: "100%", objectFit: "cover", height: "auto" }}
-        />
+        <Image alt="" src={banner} style={{ width: "100%", objectFit: "cover", height: "auto" }} />
       </Box>
       <Box sx={{ width: "100%" }}>
-        <Image
-          alt="Mountains"
-          src={bannerOrange}
-          style={{ width: "100%", objectFit: "cover", height: "auto" }}
-        />
+        <Image alt="Mountains" src={bannerOrange} style={{ width: "100%", objectFit: "cover", height: "auto" }} />
       </Box>
       <Form path="/conexiones-reales" />
-      <Box
-        sx={{ padding: "40px 0", width: "100%", backgroundColor: "#f5f5f5" }}
-      >
+      <Box sx={{ padding: "40px 0", width: "100%", backgroundColor: "#f5f5f5" }}>
         <Typography
           textAlign="center"
           className={`${style.orangeLine}`}
@@ -82,12 +61,8 @@ const index = () => {
             }}
           >
             <Card sx={{ maxWidth: 300 }}>
-              <Box
-                position="relative"
-                onMouseEnter={() => setcard1(true)}
-                onMouseLeave={() => setcard1(false)}
-              >
-                <Link href="https://www.natura.cl/p/mascarilla-exfoliante-reductora-de-poros-faces-50ml/85003cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=1">
+              <Box position="relative" onMouseEnter={() => setcard1(true)} onMouseLeave={() => setcard1(false)}>
+                <Link>
                   <Image
                     style={{
                       display: card1 ? "none" : "block",
@@ -147,23 +122,12 @@ const index = () => {
                     </Typography>
                   </Box>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/p/mascarilla-exfoliante-reductora-de-poros-faces-50ml/85003cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=1"
-                >
-                  <Typography
-                    sx={{ fontWeight: "700" }}
-                    className={`${style.cardText}`}
-                    variant="body1"
-                  >
+                <Link underline="none">
+                  <Typography sx={{ fontWeight: "700" }} className={`${style.cardText}`} variant="body1">
                     Máscara Facial Exfoliante Reductora de Poros Natura Faces
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "25px" }}
-                  variant="body1"
-                  color="#333333"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "25px" }} variant="body1" color="#333333">
                   $5.990
                 </Typography>
               </CardContent>
@@ -192,12 +156,8 @@ const index = () => {
             }}
           >
             <Card sx={{ maxWidth: 300 }}>
-              <Box
-                position="relative"
-                onMouseEnter={() => setcard2(true)}
-                onMouseLeave={() => setcard2(false)}
-              >
-                <Link href="https://www.natura.cl/p/hidratante-facial-aclarador-fps-15-piel-oleosa-faces-50ml/91821cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=3">
+              <Box position="relative" onMouseEnter={() => setcard2(true)} onMouseLeave={() => setcard2(false)}>
+                <Link>
                   <Image
                     style={{
                       display: card2 ? "none" : "block",
@@ -227,10 +187,7 @@ const index = () => {
                   }}
                   position="absolute"
                 >
-                  <Chip
-                    label="Vegano"
-                    sx={{ background: "rgb(125, 229, 37)", color: "#fff" }}
-                  />
+                  <Chip label="Vegano" sx={{ background: "rgb(125, 229, 37)", color: "#fff" }} />
                   <IconButton size="large">
                     <FavoriteBorderOutlinedIcon />
                   </IconButton>
@@ -261,19 +218,12 @@ const index = () => {
                     </Typography>
                   </Box>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/p/hidratante-facial-aclarador-fps-15-piel-oleosa-faces-50ml/91821cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=3"
-                >
+                <Link underline="none">
                   <Typography className={`${style.cardText}`} variant="body1">
                     Hidratante Facial Piel Normal a Seca Faces
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "25px" }}
-                  variant="body1"
-                  color="#333333"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "25px" }} variant="body1" color="#333333">
                   $5.990
                 </Typography>
               </CardContent>
@@ -324,7 +274,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 375, minHeight: "30rem", boxShadow: "none" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/a-natura/mas-natura/meditacion-5-desafios-comunes-y-como-superarlos">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -346,7 +296,6 @@ const index = () => {
                 >
                   <Link
                     target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fmeditacion-5-desafios-comunes-y-como-superarlos"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -358,7 +307,6 @@ const index = () => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://www.twitter.com/share?text=MEDITACI%C3%93N:%205%20DESAF%C3%8DOS%20COMUNES%20Y%20C%C3%93MO%20SUPERARLOS&url=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fmeditacion-5-desafios-comunes-y-como-superarlos&via=natura_chile"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -383,10 +331,7 @@ const index = () => {
                     Más Natura
                   </Typography>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/a-natura/mas-natura/meditacion-5-desafios-comunes-y-como-superarlos"
-                >
+                <Link underline="none">
                   <Typography
                     color="#000"
                     sx={{ "&:hover": { textDecoration: "underline" } }}
@@ -396,18 +341,10 @@ const index = () => {
                     MEDITACIÓN: 5 DESAFÍOS COMUNES Y CÓMO SUPERARLOS
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "25px" }}
-                  variant="body2"
-                  color="#636363"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "25px" }} variant="body2" color="#636363">
                   Cómo superar los principales desafíos a la hora de meditar
                 </Typography>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "20px" }}
-                  variant="body2"
-                  color="#b4b4b4"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "20px" }} variant="body2" color="#b4b4b4">
                   28/11/2022
                 </Typography>
                 <Box
@@ -419,7 +356,6 @@ const index = () => {
                   }}
                 >
                   <Link
-                    href="https://www.natura.cl/a-natura/mas-natura/meditacion-5-desafios-comunes-y-como-superarlos"
                     underline="none"
                     sx={{
                       color: "#4a90e2",
@@ -429,10 +365,7 @@ const index = () => {
                   >
                     Lea más
                   </Link>
-                  <ArrowForwardIcon
-                    fontSize="small"
-                    sx={{ color: "#4a90e2" }}
-                  />
+                  <ArrowForwardIcon fontSize="small" sx={{ color: "#4a90e2" }} />
                 </Box>
               </CardContent>
             </Card>
@@ -446,7 +379,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 375, minHeight: "30rem", boxShadow: "none" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/a-natura/piel/paso-a-paso-para-una-rutina-de-skincare">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -468,7 +401,6 @@ const index = () => {
                 >
                   <Link
                     target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fpiel%2Fpaso-a-paso-para-una-rutina-de-skincare"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -480,7 +412,6 @@ const index = () => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://twitter.com/share?text=PASO%20A%20PASO%20PARA%20UNA%20RUTINA%20DE%20SKINCARE&url=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fpiel%2Fpaso-a-paso-para-una-rutina-de-skincare&via=natura_chile"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -505,10 +436,7 @@ const index = () => {
                     Piel
                   </Typography>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/a-natura/piel/paso-a-paso-para-una-rutina-de-skincare"
-                >
+                <Link underline="none">
                   <Typography
                     color="#000"
                     sx={{ "&:hover": { textDecoration: "underline" } }}
@@ -518,18 +446,10 @@ const index = () => {
                     PASO A PASO PARA UNA RUTINA DE SKINCARE
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "15px" }}
-                  variant="body2"
-                  color="#636363"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "15px" }} variant="body2" color="#636363">
                   No busques más: tenemos la correcta rutina de skincare
                 </Typography>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "20px" }}
-                  variant="body2"
-                  color="#b4b4b4"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "20px" }} variant="body2" color="#b4b4b4">
                   29/11/2022
                 </Typography>
                 <Box
@@ -541,7 +461,6 @@ const index = () => {
                   }}
                 >
                   <Link
-                    href="https://www.natura.cl/a-natura/piel/paso-a-paso-para-una-rutina-de-skincare"
                     underline="none"
                     sx={{
                       color: "#4a90e2",
@@ -551,10 +470,7 @@ const index = () => {
                   >
                     Lea más
                   </Link>
-                  <ArrowForwardIcon
-                    fontSize="small"
-                    sx={{ color: "#4a90e2" }}
-                  />
+                  <ArrowForwardIcon fontSize="small" sx={{ color: "#4a90e2" }} />
                 </Box>
               </CardContent>
             </Card>
@@ -568,7 +484,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 375, minHeight: "30rem", boxShadow: "none" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/a-natura/mas-natura/meditacion-natura-conoce-nuestra-app-para-meditar">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -590,7 +506,6 @@ const index = () => {
                 >
                   <Link
                     target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fmeditacion-natura-conoce-nuestra-app-para-meditar"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -602,7 +517,6 @@ const index = () => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://twitter.com/share?text=MEDITACI%C3%93N%20NATURA:%20CONOCE%20NUESTRA%20APP%20PARA%20MEDITAR&url=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fmeditacion-natura-conoce-nuestra-app-para-meditar&via=natura_chile"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -627,10 +541,7 @@ const index = () => {
                     Más Natura
                   </Typography>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/a-natura/mas-natura/meditacion-natura-conoce-nuestra-app-para-meditar"
-                >
+                <Link underline="none">
                   <Typography
                     color="#000"
                     sx={{ "&:hover": { textDecoration: "underline" } }}
@@ -640,18 +551,10 @@ const index = () => {
                     MEDITACIÓN NATURA: CONOCE NUESTRA APP PARA MEDITAR
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "15px" }}
-                  variant="body2"
-                  color="#636363"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "15px" }} variant="body2" color="#636363">
                   Regálate #bienestar: medita con nuestra App
                 </Typography>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "20px" }}
-                  variant="body2"
-                  color="#b4b4b4"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "20px" }} variant="body2" color="#b4b4b4">
                   29/11/2022
                 </Typography>
                 <Box
@@ -663,7 +566,6 @@ const index = () => {
                   }}
                 >
                   <Link
-                    href="https://www.natura.cl/a-natura/mas-natura/meditacion-natura-conoce-nuestra-app-para-meditar"
                     underline="none"
                     sx={{
                       color: "#4a90e2",
@@ -673,10 +575,7 @@ const index = () => {
                   >
                     Lea más
                   </Link>
-                  <ArrowForwardIcon
-                    fontSize="small"
-                    sx={{ color: "#4a90e2" }}
-                  />
+                  <ArrowForwardIcon fontSize="small" sx={{ color: "#4a90e2" }} />
                 </Box>
               </CardContent>
             </Card>

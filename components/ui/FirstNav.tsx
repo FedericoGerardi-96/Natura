@@ -1,16 +1,4 @@
-import {
-  alpha,
-  AppBar,
-  Box,
-  Button,
-  Divider,
-  Link,
-  Menu,
-  MenuItem,
-  MenuProps,
-  styled,
-  Toolbar,
-} from "@mui/material";
+import { alpha, AppBar, Box, Button, Divider, Link, Menu, MenuItem, MenuProps, styled, Toolbar } from "@mui/material";
 import React from "react";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -101,7 +89,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/la-natura"
                   underline="none"
                   sx={{
                     color: "#b4b4b4",
@@ -120,7 +107,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/la-natura/nuestra-historia"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -139,7 +125,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/nuestras-marcas"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -158,7 +143,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/innovacion"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -177,7 +161,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/la-natura/no-testeo-en-animales"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -196,7 +179,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/la-natura/natura-en-la-prensa"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -215,7 +197,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/la-natura/trabaja-con-nosotros"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -234,7 +215,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://paginasnaranjas.com/cl/"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -254,7 +234,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/sustentabilidad"
                   underline="none"
                   sx={{
                     color: "#b4b4b4",
@@ -273,7 +252,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/sustentabilidad/causas-y-compromisos"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -292,7 +270,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/sustentabilidad/cadena-de-valor"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -311,7 +288,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/sustentabilidad/certificaciones"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -330,7 +306,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/creer-para-ver"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -349,7 +324,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/blog/sustentabilidad/necesitamos-hablar-de-residuos"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -397,7 +371,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/quiero-ser-consultor"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -417,7 +390,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/soy-consultor"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -465,7 +437,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/encuentra-natura"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -485,7 +456,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://www.natura.cl/ayuda"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -499,7 +469,7 @@ export const FirstNav = () => {
             </Menu>
           </Box>
           <Box>
-            <Link underline="none" href="https://www.natura.cl/c/navidad">
+            <Link underline="none">
               <Button
                 sx={{
                   background: "transparent",
@@ -514,10 +484,7 @@ export const FirstNav = () => {
             </Link>
           </Box>
           <Box>
-            <Link
-              underline="none"
-              href="https://latam.natura.digital-catalogue.com/view/natura-cl/np6uozukp85ynwqnfy2kguclwfc1blft9adlj7de?page=1"
-            >
+            <Link underline="none">
               <Button
                 sx={{
                   background: "transparent",
@@ -566,7 +533,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://registro.red.natura.cl/registro/"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -586,7 +552,6 @@ export const FirstNav = () => {
                 disableRipple
               >
                 <Link
-                  href="https://registro.natura.com/cl/quiero-ser-consultora/"
                   underline="none"
                   sx={{
                     color: "#3a3a3a",
@@ -600,10 +565,7 @@ export const FirstNav = () => {
             </Menu>
           </Box>
           <Box>
-            <Link
-              underline="none"
-              href="https://www.natura.cl/la-union-es-nuestra-solucion"
-            >
+            <Link underline="none">
               <Button
                 sx={{
                   background: "transparent",
@@ -618,10 +580,7 @@ export const FirstNav = () => {
             </Link>
           </Box>
           <Box>
-            <Link
-              underline="none"
-              href="https://www.natura.cl/regalos-corporativos"
-            >
+            <Link underline="none">
               <Button
                 sx={{
                   background: "transparent",
@@ -636,10 +595,7 @@ export const FirstNav = () => {
             </Link>
           </Box>
           <Box>
-            <Link
-              underline="none"
-              href="https://tracking.natura.cl/nwtchile/index.html"
-            >
+            <Link underline="none">
               <Button
                 sx={{
                   background: "transparent",

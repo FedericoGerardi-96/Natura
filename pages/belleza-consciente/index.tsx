@@ -2,18 +2,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Grid,
-  Typography,
-  Link,
-  Chip,
-  IconButton,
-} from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, Grid, Typography, Link, Chip, IconButton } from "@mui/material";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import StarIcon from "@mui/icons-material/Star";
@@ -43,23 +32,13 @@ const index = () => {
   return (
     <>
       <Box sx={{ width: "100%" }}>
-        <Image
-          alt=""
-          src={banner}
-          style={{ width: "100%", objectFit: "cover", height: "auto" }}
-        />
+        <Image alt="" src={banner} style={{ width: "100%", objectFit: "cover", height: "auto" }} />
       </Box>
       <Box sx={{ width: "100%" }}>
-        <Image
-          alt="Mountains"
-          src={bannerOrange}
-          style={{ width: "100%", objectFit: "cover", height: "auto" }}
-        />
+        <Image alt="Mountains" src={bannerOrange} style={{ width: "100%", objectFit: "cover", height: "auto" }} />
       </Box>
-      <Form path="/belleza-consciente"/>
-      <Box
-        sx={{ padding: "40px 0", width: "100%", backgroundColor: "#f5f5f5" }}
-      >
+      <Form path="/belleza-consciente" />
+      <Box sx={{ padding: "40px 0", width: "100%", backgroundColor: "#f5f5f5" }}>
         <Typography
           textAlign="center"
           className={`${style.orangeLine}`}
@@ -85,12 +64,8 @@ const index = () => {
             }}
           >
             <Card sx={{ maxWidth: 300, height: "560px" }}>
-              <Box
-                position="relative"
-                onMouseEnter={() => setcard1(true)}
-                onMouseLeave={() => setcard1(false)}
-              >
-                <Link href="https://www.natura.cl/p/tonico-capilar-pataua-ekos-30ml/73189cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=1">
+              <Box position="relative" onMouseEnter={() => setcard1(true)} onMouseLeave={() => setcard1(false)}>
+                <Link>
                   <Image
                     style={{
                       display: card1 ? "none" : "block",
@@ -120,10 +95,7 @@ const index = () => {
                   }}
                   position="absolute"
                 >
-                  <Chip
-                    label="Vegano"
-                    sx={{ background: "rgb(125, 229, 37)", color: "#fff" }}
-                  />
+                  <Chip label="Vegano" sx={{ background: "rgb(125, 229, 37)", color: "#fff" }} />
                   <IconButton size="large">
                     <FavoriteBorderOutlinedIcon />
                   </IconButton>
@@ -154,19 +126,12 @@ const index = () => {
                     </Typography>
                   </Box>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/p/tonico-capilar-pataua-ekos-30ml/73189cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=1"
-                >
+                <Link underline="none">
                   <Typography className={`${style.cardText}`} variant="body1">
                     Tónico Capilar Ekos Patauá
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ marginTop: "25px", fontWeight: "700" }}
-                  variant="body1"
-                  color="#333333"
-                >
+                <Typography sx={{ marginTop: "25px", fontWeight: "700" }} variant="body1" color="#333333">
                   $8.490
                 </Typography>
               </CardContent>
@@ -196,10 +161,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 300, height: "560px" }}>
               <Box position="relative">
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/p/jabon-liquido-exfoliante-corporal-ekos-acai-185-ml/97261cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=2"
-                >
+                <Link underline="none">
                   <Image
                     style={{
                       width: "100%",
@@ -237,20 +199,13 @@ const index = () => {
                   </Typography>
                 </Box>
                 <Box sx={{ height: "2.625rem", marginTop: "20px" }}>
-                  <Link
-                    underline="none"
-                    href="https://www.natura.cl/p/jabon-liquido-exfoliante-corporal-ekos-acai-185-ml/97261cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=2"
-                  >
+                  <Link underline="none">
                     <Typography className={`${style.cardText}`} variant="body1">
                       Jabón líquido exfoliante corporal Ekos Acaí
                     </Typography>
                   </Link>
                 </Box>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "30px" }}
-                  variant="body1"
-                  color="#333333"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "30px" }} variant="body1" color="#333333">
                   $6.990
                 </Typography>
               </CardContent>
@@ -279,12 +234,8 @@ const index = () => {
             }}
           >
             <Card sx={{ maxWidth: 300, height: "560px" }}>
-              <Box
-                position="relative"
-                onMouseEnter={() => setcard3(true)}
-                onMouseLeave={() => setcard3(false)}
-              >
-                <Link href="https://www.natura.cl/p/aceite-trifasico-corporal-maracuya-ekos-200ml/82442cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=3">
+              <Box position="relative" onMouseEnter={() => setcard3(true)} onMouseLeave={() => setcard3(false)}>
+                <Link>
                   <Image
                     style={{
                       display: card3 ? "none" : "block",
@@ -314,10 +265,7 @@ const index = () => {
                   }}
                   position="absolute"
                 >
-                  <Chip
-                    label="Vegano"
-                    sx={{ background: "rgb(125, 229, 37)", color: "#fff" }}
-                  />
+                  <Chip label="Vegano" sx={{ background: "rgb(125, 229, 37)", color: "#fff" }} />
                   <IconButton size="large">
                     <FavoriteBorderOutlinedIcon />
                   </IconButton>
@@ -348,19 +296,12 @@ const index = () => {
                     </Typography>
                   </Box>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/p/aceite-trifasico-corporal-maracuya-ekos-200ml/82442cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=3"
-                >
+                <Link underline="none">
                   <Typography className={`${style.cardText}`} variant="body1">
                     Aceite Trifásico Corporal Ekos Maracuyá
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "25px" }}
-                  variant="body1"
-                  color="#333333"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "25px" }} variant="body1" color="#333333">
                   $12.490
                 </Typography>
               </CardContent>
@@ -390,7 +331,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 300, height: "560px" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/p/aceite-de-masaje-ekos-andiroba-100ml/108588cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=4">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -441,10 +382,7 @@ const index = () => {
                   </Box>
                 </Box>
                 <Box sx={{ height: "2.625rem" }}>
-                  <Link
-                    underline="none"
-                    href="https://www.natura.cl/p/aceite-de-masaje-ekos-andiroba-100ml/108588cl?listTitle=manual%20showcase%20-%20productos%20para%20descubrir&list_position=4"
-                  >
+                  <Link underline="none">
                     <Typography className={`${style.cardText}`} variant="body1">
                       Aceite de Masaje Ekos Andiroba
                     </Typography>
@@ -471,11 +409,7 @@ const index = () => {
                     }}
                   />
                 </Box>
-                <Typography
-                  sx={{ fontWeight: "bold" }}
-                  variant="body1"
-                  color="#333333"
-                >
+                <Typography sx={{ fontWeight: "bold" }} variant="body1" color="#333333">
                   $3.490
                 </Typography>
               </CardContent>
@@ -526,7 +460,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 375, minHeight: "30rem", boxShadow: "none" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/a-natura/mas-natura/regalos-con-sentido-elige-mas-consciente">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -548,7 +482,6 @@ const index = () => {
                 >
                   <Link
                     target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fregalos-con-sentido-elige-mas-consciente"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -560,7 +493,6 @@ const index = () => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://www.twitter.com/share?text=REGALOS%20CON%20SENTIDO:%20ELIGE%20M%C3%81S%20CONSCIENTE&url=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fregalos-con-sentido-elige-mas-consciente&via=natura_chile"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -585,10 +517,7 @@ const index = () => {
                     Más Natura
                   </Typography>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/a-natura/mas-natura/regalos-con-sentido-elige-mas-consciente"
-                >
+                <Link underline="none">
                   <Typography
                     color="#000"
                     sx={{ "&:hover": { textDecoration: "underline" } }}
@@ -598,18 +527,10 @@ const index = () => {
                     REGALOS CON SENTIDO: ELIGE MÁS CONSCIENTE
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "25px" }}
-                  variant="body2"
-                  color="#636363"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "25px" }} variant="body2" color="#636363">
                   En cada regalo, un mundo de afectos
                 </Typography>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "20px" }}
-                  variant="body2"
-                  color="#b4b4b4"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "20px" }} variant="body2" color="#b4b4b4">
                   29/11/2022
                 </Typography>
                 <Box
@@ -621,7 +542,6 @@ const index = () => {
                   }}
                 >
                   <Link
-                    href="https://www.natura.cl/a-natura/mas-natura/regalos-con-sentido-elige-mas-conscientes"
                     underline="none"
                     sx={{
                       color: "#4a90e2",
@@ -631,10 +551,7 @@ const index = () => {
                   >
                     Lea más
                   </Link>
-                  <ArrowForwardIcon
-                    fontSize="small"
-                    sx={{ color: "#4a90e2" }}
-                  />
+                  <ArrowForwardIcon fontSize="small" sx={{ color: "#4a90e2" }} />
                 </Box>
               </CardContent>
             </Card>
@@ -648,7 +565,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 375, minHeight: "30rem", boxShadow: "none" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/a-natura/mas-natura/ipl-nuestro-compromiso-real-contigo-la-sociedad-y-el-medio-ambiente">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -670,7 +587,6 @@ const index = () => {
                 >
                   <Link
                     target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fipl-nuestro-compromiso-real-contigo-la-sociedad-y-el-medio-ambiente"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -682,7 +598,6 @@ const index = () => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://twitter.com/intent/tweet?text=IP&L%3A%20nuestro%20compromiso%20real%20contigo%2C%20la%20sociedad%20y%20el%20medio%20ambiente=&url=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fmas-natura%2Fipl-nuestro-compromiso-real-contigo-la-sociedad-y-el-medio-ambiente&via=natura_chile"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -707,32 +622,20 @@ const index = () => {
                     Más Natura
                   </Typography>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/a-natura/mas-natura/ipl-nuestro-compromiso-real-contigo-la-sociedad-y-el-medio-ambiente"
-                >
+                <Link underline="none">
                   <Typography
                     color="#000"
                     sx={{ "&:hover": { textDecoration: "underline" } }}
                     className={`${style.card2Text}`}
                     variant="body2"
                   >
-                    IP&L: nuestro compromiso real contigo, la sociedad y el
-                    medio ambiente
+                    IP&L: nuestro compromiso real contigo, la sociedad y el medio ambiente
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "15px" }}
-                  variant="body2"
-                  color="#636363"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "15px" }} variant="body2" color="#636363">
                   ¿A dónde estamos, a dónde vamos?
                 </Typography>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "20px" }}
-                  variant="body2"
-                  color="#b4b4b4"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "20px" }} variant="body2" color="#b4b4b4">
                   29/11/2022
                 </Typography>
                 <Box
@@ -744,7 +647,6 @@ const index = () => {
                   }}
                 >
                   <Link
-                    href="https://www.natura.cl/a-natura/mas-natura/ipl-nuestro-compromiso-real-contigo-la-sociedad-y-el-medio-ambiente"
                     underline="none"
                     sx={{
                       color: "#4a90e2",
@@ -754,10 +656,7 @@ const index = () => {
                   >
                     Lea más
                   </Link>
-                  <ArrowForwardIcon
-                    fontSize="small"
-                    sx={{ color: "#4a90e2" }}
-                  />
+                  <ArrowForwardIcon fontSize="small" sx={{ color: "#4a90e2" }} />
                 </Box>
               </CardContent>
             </Card>
@@ -771,7 +670,7 @@ const index = () => {
           >
             <Card sx={{ maxWidth: 375, minHeight: "30rem", boxShadow: "none" }}>
               <Box position="relative">
-                <Link href="https://www.natura.cl/a-natura/sustentabilidad/7-ideas-para-transformar-tu-rutina-de-belleza">
+                <Link>
                   <Image
                     style={{
                       width: "100%",
@@ -793,7 +692,6 @@ const index = () => {
                 >
                   <Link
                     target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fsustentabilidad%2F7-ideas-para-transformar-tu-rutina-de-belleza"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -805,7 +703,6 @@ const index = () => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://twitter.com/intent/tweet?text=7%20IDEAS%20PARA%20TRANSFORMAR%20TU%20RUTINA%20DE%20BELLEZA&url=https%3A%2F%2Fwww.natura.cl%2Fa-natura%2Fsustentabilidad%2F7-ideas-para-transformar-tu-rutina-de-belleza&via=natura_chile"
                     sx={{
                       border: ".5px solid #fff",
                       padding: "8px",
@@ -830,10 +727,7 @@ const index = () => {
                     Sustentabilidad
                   </Typography>
                 </Box>
-                <Link
-                  underline="none"
-                  href="https://www.natura.cl/a-natura/sustentabilidad/7-ideas-para-transformar-tu-rutina-de-belleza"
-                >
+                <Link underline="none">
                   <Typography
                     color="#000"
                     sx={{ "&:hover": { textDecoration: "underline" } }}
@@ -843,19 +737,10 @@ const index = () => {
                     7 IDEAS PARA TRANSFORMAR TU RUTINA DE BELLEZA
                   </Typography>
                 </Link>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "15px" }}
-                  variant="body2"
-                  color="#636363"
-                >
-                  Más belleza, menos residuos: 7 hábitos en armonía con el
-                  planeta
+                <Typography sx={{ fontWeight: "bold", marginTop: "15px" }} variant="body2" color="#636363">
+                  Más belleza, menos residuos: 7 hábitos en armonía con el planeta
                 </Typography>
-                <Typography
-                  sx={{ fontWeight: "bold", marginTop: "20px" }}
-                  variant="body2"
-                  color="#b4b4b4"
-                >
+                <Typography sx={{ fontWeight: "bold", marginTop: "20px" }} variant="body2" color="#b4b4b4">
                   29/11/2022
                 </Typography>
                 <Box
@@ -867,7 +752,6 @@ const index = () => {
                   }}
                 >
                   <Link
-                    href="https://www.natura.cl/a-natura/sustentabilidad/7-ideas-para-transformar-tu-rutina-de-belleza"
                     underline="none"
                     sx={{
                       color: "#4a90e2",
@@ -877,10 +761,7 @@ const index = () => {
                   >
                     Lea más
                   </Link>
-                  <ArrowForwardIcon
-                    fontSize="small"
-                    sx={{ color: "#4a90e2" }}
-                  />
+                  <ArrowForwardIcon fontSize="small" sx={{ color: "#4a90e2" }} />
                 </Box>
               </CardContent>
             </Card>

@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Checkbox,
-  Container,
-  FormControlLabel,
-  TextField,
-  Typography,
-  Link,
-} from "@mui/material";
+import { Box, Button, Checkbox, Container, FormControlLabel, TextField, Typography, Link } from "@mui/material";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -36,9 +27,7 @@ type FormData = {
 };
 
 export const Form = ({ path }: Props) => {
-  const router = useRouter();
   const [fecha, setfecha] = useState<Dayjs | null>(null);
-  const { utm_medium, utm_source } = router.query;
   const {
     register,
     handleSubmit,
@@ -46,41 +35,11 @@ export const Form = ({ path }: Props) => {
   } = useForm<FormData>();
 
   const OnSendData = async (data: FormData) => {
-    const { email, nombre, apellido, fecha, check1, check2 } = data;
     try {
-      const response = await fetch(`/api/${path}`, {
-        method: "POST",
-        body: JSON.stringify({
-          email,
-          nombre,
-          apellido,
-          fecha,
-          check1,
-          check2,
-          utm_medium,
-          utm_source,
-        }),
-      });
-      window.location.assign("https://www.natura.cl/");
+      console.log(data);
     } catch (error) {
-      console.log("Front error: ", error);
+      console.log(error);
     }
-
-    //  try {
-    //    const response: AxiosResponse = await tesloApi.post(path, {
-    //      email,
-    //      nombre,
-    //      apellido,
-    //      fecha,
-    //      check1,
-    //      check2,
-    //      utm_medium,
-    //      utm_source,
-    //    });
-    //    console.log(response);
-    //  } catch (error) {
-    //    console.log("Front error: ",error);
-    //  }
   };
 
   return (
@@ -94,11 +53,7 @@ export const Form = ({ path }: Props) => {
           padding: "25px 0",
         }}
       >
-        <Typography
-          sx={{ fontWeight: "700" }}
-          className={`${style.orangeLine}`}
-          variant="h6"
-        >
+        <Typography sx={{ fontWeight: "700" }} className={`${style.orangeLine}`} variant="h6">
           LOS PRODUCTOS QUE BUSCABAS, CON EL DESCUENTO QUE QUERÍAS
         </Typography>
         <Container>
@@ -143,11 +98,7 @@ export const Form = ({ path }: Props) => {
                 })}
                 required
               />
-              <Typography
-                sx={{ marginBottom: "5px" }}
-                align="left"
-                variant="body2"
-              >
+              <Typography sx={{ marginBottom: "5px" }} align="left" variant="body2">
                 FECHA DE NACIMIENTO
               </Typography>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -156,9 +107,7 @@ export const Form = ({ path }: Props) => {
                   onChange={(newValue) => {
                     setfecha(newValue);
                   }}
-                  renderInput={(params) => (
-                    <TextField sx={{ width: "100%" }} {...params} required />
-                  )}
+                  renderInput={(params) => <TextField sx={{ width: "100%" }} {...params} required />}
                 />
               </LocalizationProvider>
               <FormControlLabel
@@ -198,9 +147,7 @@ export const Form = ({ path }: Props) => {
                 }
                 label="Confirmo ser mayor de 18 años y estoy de acuerdo con la Política de Privacidad y Condiciones de Uso."
               />
-              <Box
-                sx={{ width: "100%", display: "flex", justifyContent: "start" }}
-              >
+              <Box sx={{ width: "100%", display: "flex", justifyContent: "start" }}>
                 <Button
                   type="submit"
                   sx={{
@@ -216,11 +163,7 @@ export const Form = ({ path }: Props) => {
               <Box sx={{ width: "100%", marginTop: "25px" }}>
                 <Typography align="right" variant="body2">
                   Al registrarme, acepto la
-                  <Link
-                    target="_blank"
-                    underline="none"
-                    href="https://www.natura.cl/politicas-de-privacidad"
-                  >
+                  <Link target="_blank" underline="none">
                     Política de privacidad
                   </Link>
                 </Typography>

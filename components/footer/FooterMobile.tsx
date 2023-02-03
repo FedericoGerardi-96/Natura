@@ -33,17 +33,7 @@ import Image from "next/image";
 import style from "../../styles/Footer.module.css";
 
 export const FooterMobile = () => {
-  const Pagos = [
-    visa,
-    mastercard,
-    americaExpress,
-    dinnersClub,
-    cmr,
-    presto,
-    redcompra,
-    mercadoPago,
-    seloConfianca,
-  ];
+  const Pagos = [visa, mastercard, americaExpress, dinnersClub, cmr, presto, redcompra, mercadoPago, seloConfianca];
   return (
     <>
       <Box>
@@ -61,7 +51,6 @@ export const FooterMobile = () => {
               alignItems: "center",
             }}
             underline="none"
-            href="https://api.whatsapp.com/send?phone=5511930380000"
           >
             <HelpOutlineOutlinedIcon
               sx={{
@@ -102,7 +91,6 @@ export const FooterMobile = () => {
               alignItems: "center",
             }}
             underline="none"
-            href="https://www.natura.cl/la-natura/no-testeo-en-animales"
           >
             <PetsOutlinedIcon
               sx={{
@@ -144,7 +132,6 @@ export const FooterMobile = () => {
               alignItems: "center",
             }}
             underline="none"
-            href="https://www.natura.cl/encuentra-natura"
           >
             <LocationOnOutlinedIcon
               sx={{
@@ -186,7 +173,6 @@ export const FooterMobile = () => {
               alignItems: "center",
             }}
             underline="none"
-            href="https://api.whatsapp.com/send?phone=5511930380000"
           >
             <DonutLargeOutlinedIcon
               sx={{
@@ -227,25 +213,19 @@ export const FooterMobile = () => {
         }}
       >
         <Box sx={{ maxWidth: "75rem", margin: "0 auto", display: "flex" }}>
-          <Box
-            sx={{ display: "flex", alignItems: "center", marginRight: "5rem" }}
-          >
+          <Box sx={{ display: "flex", alignItems: "center", marginRight: "5rem" }}>
             <HomeOutlinedIcon
               sx={{
                 fontSize: "1.2rem",
                 marginRight: "5px",
               }}
             />
-            <Typography
-              sx={{ fontWeight: "700", marginRight: "10px", fontSize: ".8rem" }}
-              color="#000"
-            >
+            <Typography sx={{ fontWeight: "700", marginRight: "10px", fontSize: ".8rem" }} color="#000">
               MI CONSULTOR:
             </Typography>
             <Link
               className={`${style.footerItem}`}
               underline="none"
-              href="https://www.natura.cl/buscar-consultor?redirect=%2Fexpresion-de-color"
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -288,10 +268,7 @@ export const FooterMobile = () => {
                     boxShadow: "none !important",
                   }}
                 >
-                  <AccordionSummary
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                  >
+                  <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
                     <Box
                       textAlign="center"
                       sx={{
@@ -314,11 +291,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/la-natura"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Sobre Nosotros
                         </Link>
                       </li>
@@ -331,11 +304,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/sustentabilidad"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Sustentabilidad
                         </Link>
                       </li>
@@ -348,11 +317,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/la-natura/trabaja-con-nosotros"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Trabaja con nosotros
                         </Link>
                       </li>
@@ -366,10 +331,7 @@ export const FooterMobile = () => {
                     boxShadow: "none !important",
                   }}
                 >
-                  <AccordionSummary
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                  >
+                  <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
                     <Box
                       textAlign="center"
                       sx={{
@@ -392,11 +354,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/encuentra-natura"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Encuentra Natura
                         </Link>
                       </li>
@@ -409,11 +367,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/ayuda"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Ayuda y Contacto
                         </Link>
                       </li>
@@ -426,11 +380,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/quiero-ser-consultor"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Quiero ser Consultora
                         </Link>
                       </li>
@@ -444,10 +394,7 @@ export const FooterMobile = () => {
                     boxShadow: "none !important",
                   }}
                 >
-                  <AccordionSummary
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                  >
+                  <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
                     <Box
                       textAlign="center"
                       sx={{
@@ -470,11 +417,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/terminos-y-condiciones"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Términos y Condiciones
                         </Link>
                       </li>
@@ -487,11 +430,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/politicas-de-privacidad"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Políticas de Privacidad
                         </Link>
                       </li>
@@ -504,11 +443,7 @@ export const FooterMobile = () => {
                           justifyContent: "center",
                         }}
                       >
-                        <Link
-                          href="https://www.natura.cl/etica-compliance"
-                          underline="none"
-                          sx={{ color: "#b4b4b4", cursor: "pointer" }}
-                        >
+                        <Link underline="none" sx={{ color: "#b4b4b4", cursor: "pointer" }}>
                           Ética y Compliance
                         </Link>
                       </li>
@@ -527,24 +462,11 @@ export const FooterMobile = () => {
                 }}
               >
                 <Box sx={{ display: "flex" }}>
-                  <Link
-                    sx={{ marginRight: "5px" }}
-                    href="https://play.google.com/store/apps/details?id=net.natura.semprepresente&referrer=utm_source%3Drede_natura_mobile%26utm_medium%3Dbotao_google_play&pli=1"
-                  >
-                    <Image
-                      alt="google play"
-                      src={googlePlay}
-                      height={30}
-                      width={97}
-                    />
+                  <Link sx={{ marginRight: "5px" }}>
+                    <Image alt="google play" src={googlePlay} height={30} width={97} />
                   </Link>
-                  <Link href="https://itunes.apple.com/app/apple-store/id1061637276?pt=1379476&ct=rede_natura_mobile_botao_appstore&mt=8">
-                    <Image
-                      alt="google play"
-                      src={appStore}
-                      height={30}
-                      width={97}
-                    />
+                  <Link>
+                    <Image alt="google play" src={appStore} height={30} width={97} />
                   </Link>
                 </Box>
               </Grid>
@@ -563,7 +485,7 @@ export const FooterMobile = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    flexDirection: 'column'
+                    flexDirection: "column",
                   }}
                 >
                   <Typography
@@ -601,24 +523,14 @@ export const FooterMobile = () => {
                   marginTop: "20px",
                 }}
               >
-                <Typography
-                  sx={{ lineHeight: "1.7", fontSize: ".75rem" }}
-                  color="#b4b4b4"
-                >
-                  © 2022 Natura Cosméticos S.A RUT: 96.575.280-3. Todos los
-                  derechos reservados.
+                <Typography sx={{ lineHeight: "1.7", fontSize: ".75rem" }} color="#b4b4b4">
+                  © 2022 Natura Cosméticos S.A RUT: 96.575.280-3. Todos los derechos reservados.
                 </Typography>
-                <Typography
-                  sx={{ lineHeight: "1.7", fontSize: ".75rem" }}
-                  color="#b4b4b4"
-                >
-                  Todos los precios y condiciones de este sitio son válidos sólo
-                  para compras en el sitio. Precios y promociones pueden cambiar
-                  sin previo aviso. Destacamos que los precios previstos en el
-                  sitio prevalecen a los demás anunciados en otros medios de
-                  comunicación y/o sitios de búsquedas. El precio válido es el
-                  que se informa en el carro de compras. Imágenes son sólo
-                  ilustrativas.
+                <Typography sx={{ lineHeight: "1.7", fontSize: ".75rem" }} color="#b4b4b4">
+                  Todos los precios y condiciones de este sitio son válidos sólo para compras en el sitio. Precios y
+                  promociones pueden cambiar sin previo aviso. Destacamos que los precios previstos en el sitio
+                  prevalecen a los demás anunciados en otros medios de comunicación y/o sitios de búsquedas. El precio
+                  válido es el que se informa en el carro de compras. Imágenes son sólo ilustrativas.
                 </Typography>
               </Grid>
             </Grid>

@@ -17,92 +17,52 @@ export const ThirdNav = () => {
           }}
         >
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/promociones/promociones"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               PROMOCIONES
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/navidad"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               NAVIDAD 🎄
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/cuidados-diarios"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               CUIDADOS DIARIOS
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/perfumeria"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               PERFUMERÍA
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/maquillaje"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               MAQUILLAJE
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/cabello"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               CABELLO
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/rostro"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               ROSTRO
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/veganos"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               VEGANOS
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/repuestos"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               REPUESTOS
             </Link>
           </Box>
           <Box>
-            <Link
-              sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }}
-              underline="none"
-              href="https://www.natura.cl/c/outlet"
-            >
+            <Link sx={{ color: "#000", "&:hover": { color: "#f4ab34" } }} underline="none">
               OUTLET
             </Link>
           </Box>
